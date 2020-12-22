@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<list name="High Scores">
+  <score rank="1" name="Tuxedo Finn" points="10000" />
+  <score rank="2" name="Tuxedo Finn" points="9000" />
+  <score rank="3" name="Tuxedo Finn" points="8000" />
+  <score rank="4" name="Tuxedo Finn" points="7000" />
+  <score rank="5" name="Tuxedo Finn" points="6000" />
+  <score rank="6" name="Tuxedo Finn" points="5000" />
+  <score rank="7" name="Tuxedo Finn" points="4000" />
+  <score rank="8" name="Tuxedo Finn" points="3000" />
+  <score rank="9" name="Tuxedo Finn" points="2000" />
+  <score rank="10" name="Tuxedo Finn" points="1000" />
+</list>

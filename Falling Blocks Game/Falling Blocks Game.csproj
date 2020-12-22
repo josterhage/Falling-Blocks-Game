@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Falling_Blocks_Game</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Icon1.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Emperor Penguin - Small.png" />
+    <None Remove="HighScores.xml" />
+    <None Remove="Resources\Emperor Penguin - Small.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="HighScores.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Resource Include="Emperor Penguin - Small.png" />
+    <Resource Include="Resources\Emperor Penguin - Small.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>

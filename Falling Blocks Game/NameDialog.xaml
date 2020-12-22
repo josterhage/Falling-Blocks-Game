@@ -1,0 +1,25 @@
+﻿<Window x:Class="Falling_Blocks_Game.NameDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Falling_Blocks_Game"
+        mc:Ignorable="d"
+        Background="#FF343131"
+        Title="NameDialog" Height="60" Width="180"
+        ResizeMode="NoResize" WindowStyle="None">
+    <Grid Height="56" VerticalAlignment="Center" Width="160" HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1.5*" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="Please enter your name:" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="Showcard Gothic" Foreground="#FFF0E5E5" />
+        <TextBox x:Name="hsName" Text="Tuxedo Finn" HorizontalAlignment="Left" Height="16" Grid.Row="1" 
+                 TextWrapping="NoWrap" VerticalAlignment="Top" Width="160"
+                 FontFamily="Showcard Gothic" MaxLength="50" TouchEnter="HsName_TouchEnter"/>
+        <Button Content="I am the best..." HorizontalAlignment="Left" Grid.Row="2" Width="160"
+                Background="#FF282626" Foreground="#FFF0E5E5" 
+                FontFamily="Showcard Gothic" Click="Button_Click"/>
+    </Grid>
+</Window>

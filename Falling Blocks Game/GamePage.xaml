@@ -1,0 +1,21 @@
+﻿<Page x:Class="Falling_Blocks_Game.GamePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Falling_Blocks_Game"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="600"
+      Title="GamePage" Focusable="False" Width="400" Height="600">
+
+    <Grid KeyboardNavigation.DirectionalNavigation="None" Width="400" Height="600">
+        <Canvas x:Name="gameField" HorizontalAlignment="Right" Height="480" Margin="0,0,20,45" VerticalAlignment="Bottom" Width="240" Background="Black" KeyDown="GameField_KeyDown" Focusable="True"/>
+        <Button x:Name="gameQuit" Content="Quit" HorizontalAlignment="Left" Height="36" Margin="10,519,0,0" VerticalAlignment="Top" Width="85" Background="#FF282626" Foreground="#FFF0E5E5" FontFamily="Showcard Gothic" FontSize="24" Click="GameQuit_Click" Focusable="False" RenderTransformOrigin="0.536,-0.828"/>
+        <TextBlock Text="Score" HorizontalAlignment="Left" Width="85" Margin="10,75,0,493" Foreground="#FFF0E5E5" FontFamily="Showcard Gothic" FontSize="24" />
+        <TextBlock x:Name="scoreBox" HorizontalAlignment="Left" Width="85" Margin="10,112,0,456" Foreground="#FFF0E5E5" FontFamily="Showcard Gothic" FontSize="24" TextAlignment="Right" />
+        <TextBlock Text="Level" HorizontalAlignment="Left" Width="85" Margin="10,149,0,419" Foreground="#FFF0E5E5" FontFamily="Showcard Gothic" FontSize="24" />
+        <TextBlock x:Name="levelBox" HorizontalAlignment="Left" Width="85" Margin="10,186,0,382" Foreground="#FFF0E5E5" FontFamily="Showcard Gothic" FontSize="24" TextAlignment="Right" />
+        <TextBlock Text="NEXT" HorizontalAlignment="Left" Width="85" Margin="10,223,0,345" Foreground="#FFF0E5E5" FontFamily="Showcard Gothic" FontSize="24" />
+        <Canvas x:Name="nextBox" HorizontalAlignment="Left" Height="85" Width="85" Margin="10,260,0,260" Background="Black"/>
+    </Grid>
+</Page>
